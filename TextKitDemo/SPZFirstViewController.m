@@ -11,6 +11,7 @@
 @interface SPZFirstViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (nonatomic, strong) NSString  *styleApplied; // will hold the current applied text style
 
 - (IBAction)applyHeadlineStyle:(id)sender;
@@ -36,9 +37,12 @@
     
     // Add observer for text change notification
     [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(textSizeChangedWithNotification)
+                                             selector:@selector(textSizeChangedWithNotification:)
                                                  name:UIContentSizeCategoryDidChangeNotification
                                                object:nil];
+    
+    // UI Elements
+    [_imageView setHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -84,7 +88,26 @@
 }
 
 - (IBAction)toggleImage:(id)sender {
-    // TODO: code to toggle image
+    //[_imageView setHidden:NO]; // testing
+    
+    // Check if image is hidden
+    if (_imageView.isHidden) {
+        // Convert the imageView coordinates from self.view view to
+        // _textView so the frame and text exist on the same plane
+        CGRect convertedFrame = [_textView convertRect:_imageView.frame fromView:self.view];
+        
+        // Get the exclusion paths
+        // Use bezierPathWithRect to get the bezier path created
+        // by convertedFrame (i.e. the imageView frame) and add
+        // to an array via setExclusionPaths:
+        [[_textView textContainer] setExclusionPaths:@[[UIBezierPath bezierPathWithRect:convertedFrame]]];
+    } else {
+        // Set exclusion paths to nil because we don't want text to
+        // wrap around the image if it is hidden
+        [[_textView textContainer] setExclusionPaths:nil];
+    }
+    
+    [_imageView setHidden:![_imageView isHidden]];
 }
 
 - (void)textSizeChangedWithNotification:(NSNotification *)notification

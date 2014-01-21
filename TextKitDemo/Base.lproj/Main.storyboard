@@ -102,11 +102,16 @@ A footnote to make this sample perfect</string>
                                 </attributedString>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sample.png" translatesAutoresizingMaskIntoConstraints="NO" id="l5k-vR-Fez">
+                                <rect key="frame" x="100" y="110" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="L3S-Rb-mKv"/>
                     <connections>
+                        <outlet property="imageView" destination="l5k-vR-Fez" id="5mg-DZ-C6J"/>
                         <outlet property="textView" destination="PPO-pS-8Yn" id="366-bZ-8JR"/>
                     </connections>
                 </viewController>
@@ -134,6 +139,9 @@ A footnote to make this sample perfect</string>
             <point key="canvasLocation" x="253" y="122"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sample.png" width="120" height="120"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
