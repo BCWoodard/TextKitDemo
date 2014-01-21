@@ -1,5 +1,5 @@
 //
-//  SPZViewController.h
+//  SPZSecondViewController.h
 //  TextKitDemo
 //
 //  Created by Brad Woodard on 1/21/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SPZViewController : UIViewController
+@interface SPZSecondViewController : UIViewController
 
 @end

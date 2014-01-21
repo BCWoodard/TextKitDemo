@@ -14,13 +14,14 @@
 		4A247AAD188F156C0088D795 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A247AAC188F156C0088D795 /* main.m */; };
 		4A247AB1188F156C0088D795 /* SPZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A247AB0188F156C0088D795 /* SPZAppDelegate.m */; };
 		4A247AB4188F156D0088D795 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A247AB2188F156D0088D795 /* Main.storyboard */; };
-		4A247AB7188F156D0088D795 /* SPZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A247AB6188F156D0088D795 /* SPZViewController.m */; };
+		4A247AB7188F156D0088D795 /* SPZFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A247AB6188F156D0088D795 /* SPZFirstViewController.m */; };
 		4A247AB9188F156D0088D795 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A247AB8188F156D0088D795 /* Images.xcassets */; };
 		4A247AC0188F156D0088D795 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A247ABF188F156D0088D795 /* XCTest.framework */; };
 		4A247AC1188F156D0088D795 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A247AA0188F156C0088D795 /* Foundation.framework */; };
 		4A247AC2188F156D0088D795 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A247AA4188F156C0088D795 /* UIKit.framework */; };
 		4A247ACA188F156D0088D795 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4A247AC8188F156D0088D795 /* InfoPlist.strings */; };
 		4A247ACC188F156D0088D795 /* TextKitDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A247ACB188F156D0088D795 /* TextKitDemoTests.m */; };
+		4A247AD7188F16B60088D795 /* SPZSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A247AD6188F16B60088D795 /* SPZSecondViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		4A247AAF188F156C0088D795 /* SPZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPZAppDelegate.h; sourceTree = "<group>"; };
 		4A247AB0188F156C0088D795 /* SPZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPZAppDelegate.m; sourceTree = "<group>"; };
 		4A247AB3188F156D0088D795 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		4A247AB5188F156D0088D795 /* SPZViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPZViewController.h; sourceTree = "<group>"; };
-		4A247AB6188F156D0088D795 /* SPZViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPZViewController.m; sourceTree = "<group>"; };
+		4A247AB5188F156D0088D795 /* SPZFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPZFirstViewController.h; sourceTree = "<group>"; };
+		4A247AB6188F156D0088D795 /* SPZFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPZFirstViewController.m; sourceTree = "<group>"; };
 		4A247AB8188F156D0088D795 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4A247ABE188F156D0088D795 /* TextKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A247ABF188F156D0088D795 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		4A247AC7188F156D0088D795 /* TextKitDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TextKitDemoTests-Info.plist"; sourceTree = "<group>"; };
 		4A247AC9188F156D0088D795 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4A247ACB188F156D0088D795 /* TextKitDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextKitDemoTests.m; sourceTree = "<group>"; };
+		4A247AD5188F16B60088D795 /* SPZSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPZSecondViewController.h; sourceTree = "<group>"; };
+		4A247AD6188F16B60088D795 /* SPZSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPZSecondViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +118,10 @@
 				4A247AAF188F156C0088D795 /* SPZAppDelegate.h */,
 				4A247AB0188F156C0088D795 /* SPZAppDelegate.m */,
 				4A247AB2188F156D0088D795 /* Main.storyboard */,
-				4A247AB5188F156D0088D795 /* SPZViewController.h */,
-				4A247AB6188F156D0088D795 /* SPZViewController.m */,
+				4A247AB5188F156D0088D795 /* SPZFirstViewController.h */,
+				4A247AD5188F16B60088D795 /* SPZSecondViewController.h */,
+				4A247AD6188F16B60088D795 /* SPZSecondViewController.m */,
+				4A247AB6188F156D0088D795 /* SPZFirstViewController.m */,
 				4A247AB8188F156D0088D795 /* Images.xcassets */,
 				4A247AA7188F156C0088D795 /* Supporting Files */,
 			);
@@ -250,7 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A247AB7188F156D0088D795 /* SPZViewController.m in Sources */,
+				4A247AD7188F16B60088D795 /* SPZSecondViewController.m in Sources */,
+				4A247AB7188F156D0088D795 /* SPZFirstViewController.m in Sources */,
 				4A247AB1188F156C0088D795 /* SPZAppDelegate.m in Sources */,
 				4A247AAD188F156C0088D795 /* main.m in Sources */,
 			);
